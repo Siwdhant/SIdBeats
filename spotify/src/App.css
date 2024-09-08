@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+/* General styling for the app */
+body {
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+  font-family: 'Arial', sans-serif; /* Font similar to Spotify */
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  /* Set a background image for the initial screen */
+  background-image: url('C:/Users/Hp/OneDrive/Desktop/spotify-react/spotify/src/components/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  transition: background-image 0.5s ease; /* Smooth transition when background changes */
+}
+
+.app-container.no-bg-image {
+  background-image: none; /* Remove background image after search */
+}
+
+.navbar {
+  background-color: rgba(19, 17, 17, 0.7); /* Black with 70% opacity */
+}
+
+.navbar-brand {
+  color: #1db954; /* Spotify Green */
+}
+
+.navbar-brand h1 {
+  font-family: 'Dela Gothic One', sans-serif; 
+}
+
+.form-control.search-input {
+  border-radius: 20px; /* Rounded corners for input */
+  border: 1px solid #1db954; /* Green border for input */
+  background-color: #333; /* Dark background for input */
+  color: #e0e0e0; /* Light text color for input */
+}
+
+.form-control.search-input::placeholder {
+  color: #b3b3b3; /* Placeholder text color */
+}
+
+.btn-success {
+  background-color: #1db954; /* Spotify Green */
+  border: none;
+  border-radius: 20px; /* Rounded corners for button */
+  color: #fff; /* White text color for button */
+}
+
+.btn-success:hover {
+  background-color: #1ed760; /* Slightly lighter green on hover */
+}
+
+.track-container {
+  padding: 20px;
+}
+
+.card {
+  background-color: #282828; /* Dark background for card */
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  border-bottom: 1px solid #333; /* Subtle border below image */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  color: #fff; /* White text for title */
+}
+
+.card-text {
+  color: #b3b3b3; /* Light text color for artist */
+}
+
+.audio {
+  border-radius: 10px; /* Rounded corners for audio player */
+}
+
+/* Additional styles for image and logo */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.custom-navbar-bg {
+  background-color: rgba(19, 17, 17, 0.7); /* Black with 70% opacity */
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  margin: 1rem; /* Optional: Add margin if needed */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem; /* Adjust gap between cards if needed */
+  justify-content: center;
+}
